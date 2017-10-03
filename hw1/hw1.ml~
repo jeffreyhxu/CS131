@@ -1,0 +1,64 @@
+type ('nonterminal, 'terminal) symbol =
+  | N of 'nonterminal
+  | T of 'terminal;;
+
+let rec subset a b =
+  match a with
+  | [] -> true
+  | firsta :: resta ->
+      match b with
+      | [] -> false
+      | firstb :: restb ->
+          if firsta = firstb then subset resta restb
+                             else (subset a restb) && (subset resta b);;
+
+let equal_sets a b =
+  (subset a b) && (subset b a);;
+
+let rec set_union a b =
+  a @ b;;
+
+let rec find ele list =
+  match list with
+  | [] -> false
+  | first :: rest ->
+      if ele = first then true
+                     else find ele rest;;
+
+let rec set_intersection a b =
+  match a with
+  | [] -> []
+  | firsta :: resta ->
+      if find firsta b then firsta :: (set_intersection resta b)
+                       else set_intersection resta b;;
+
+let rec set_diff a b =
+  match a with
+  | [] -> []
+  | firsta :: resta ->
+      if find firsta b then set_diff resta b
+                       else firsta :: (set_diff resta b);;
+
+let rec computed_fixed_point eq f x =
+  if eq (f x) x then x
+                else computed_fixed_point eq f (f x);;
+
+let rec repeat_f f p x =
+  if p = 0 then x
+           else f (repeat_f f (p - 1) x);;
+
+let rec computed_periodic_point eq f p x =
+  if eq (repeat_f f p x) x then x
+                           else computed_periodic_point eq f p (f x);;
+
+let rec while_away s p x =
+  if p x then x :: while_away s p (s x)
+         else [];;
+
+let rec rle_decode lp =
+  match lp with
+  | [] -> []
+  | head :: tail ->
+      if (fst head) = 0 then rle_decode tail
+                        else (snd head) :: (rle_decode ((((fst head) - 1), (snd head)) :: tail));;
+
