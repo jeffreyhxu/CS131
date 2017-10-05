@@ -1,0 +1,5 @@
+let my_subset_test0 = subset [3; 2; 4; 3; 3] [5; 4; 3; 2; 1];;
+let my_subset_test1 = subset [] [5; 4; 3; 2; 1];;
+let my_subset_test2 = not (subset [5; 4; 3; 6] [5; 4; 3; 2; 1]);;
+
+let my_equal_sets_test0 = equal_sets [1; 5; 3; 5; 2; 5; 3; 4] [5; 4; 3; 2; 1];;
