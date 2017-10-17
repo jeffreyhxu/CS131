@@ -1,0 +1,42 @@
+I knew I needed to outsource checking all the possible rules of a nonterminal
+to a separate function from the one that tries to match an individual rule. I
+originally separated them before deciding to nest one in the other to make
+mutual recursion easier. I put the nonterminal checking one on the outside
+because the final solution to the problem uses it, starting with the start
+symbol.
+I used an argument to indicate which element in the rule or alternative list
+was being examined in order to keep the list whole instead of cutting off
+the head repeatedly and potentially losing track of whether the rule is just
+being started and needs to be added to the derivation.
+The ordering of the arguments in the two sub-functions was chosen so that they
+could be curried to be used as matchers or acceptors. This initially caused
+problems when I put the derivation before the acceptor, making it much harder
+to create a new acceptor for the rest of a rule when parsing a nonterminal
+within the rule.
+I chose to use recursion to evaluate each element of a rule or each rule in an
+alternative list rather than use a built-in List function to call a function on
+each element to make my program more intuitive by showing the dependence of
+rule matchers with nonterminal matchers and vice versa. Doing so also made it
+easier to check an arbitrary rule or nonterminal with an arbitrary fragment or
+acceptor rather than try to figure out which list contains the correct answer.
+
+Because this solution always checks the rules in order, it has many weaknesses.
+If any rule's right hand side begins with the nonterminal on the left hand side,
+the matcher may enter an infinite loop where evaluating a symbol requires
+evaluating itself. This can happen if the first symbols of any sets of rules
+form a cycle, as if the rules before the cyclical ones fail to match the
+fragment the first time around, no terminals will be consumed each time the
+matcher attempts to parse a new nonterminal.
+Furthermore, as shown in my test_2, the most efficient derivation may not be
+reached. The simplest example would be something along the lines of:
+S -> A
+S -> a
+A -> a
+which would cause the token string a to be parsed as
+S -> A
+A -> a
+instead of the simpler
+S -> a.
+Finally, the matcher will not always find the largest or smallest prefix that
+satisfies the acceptor. Its result is dependent on the ordering of rules, which
+can be bad if a program like the ones made in homework 1 changes the ordering.

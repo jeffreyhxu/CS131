@@ -1,0 +1,6 @@
+I knew I needed to outsource checking all the possible rules of a nonterminal
+to a separate function from the one that tries to match an individual rule. I
+originally separated them before deciding to nest one in the other to make
+mutual recursion easier. I put the nonterminal checking one on the outside
+because the final solution to the problem uses it, starting with the start
+symbol.
