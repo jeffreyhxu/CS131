@@ -1,0 +1,14 @@
+default: UnsafeMemory
+
+UnsafeMemory:
+	javac UnsafeMemory.java
+clean:
+	rm *.class
+tests: UnsafeMemory
+	for model in "Synchronized" "Unsynchronized" "GetNSet" "BetterSafe" ; do \
+		echo $$model ; \
+		for threads in 2 4 8 16 ; do \
+			echo "Threads: $$threads" ; \
+			java UnsafeMemory $$model $$threads 1000000 10 6 5 6 3 0 3 ; \
+		done ; \
+	done
