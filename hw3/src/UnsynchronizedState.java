@@ -11,7 +11,6 @@ class UnsynchronizedState implements State {
     public byte[] current() { return value; }
 
     public boolean swap(int i, int j) {
-        System.out.print("");
         if (value[i] <= 0 || value[j] >= maxval) {
             return false;
         }
