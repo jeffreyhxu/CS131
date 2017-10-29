@@ -23,8 +23,10 @@ class UnsafeMemory {
 			    s = new BetterSafeState(stateArg, maxval);
 			else if (args[0].equals("GetNSetUnsafe"))
 			    s = new GetNSetUnsafeState(stateArg, maxval);
-			else if (args[0].equals("BetterSafe2"))
-			    s = new GetNSetUnsafeState(stateArg, maxval);
+            else if (args[0].equals("BetterSafe2"))
+                s = new BetterSafe2State(stateArg, maxval);
+            else if (args[0].equals("BetterSafe3"))
+                s = new BetterSafe3State(stateArg, maxval);
 			else
                 throw new Exception(args[0]);
 			dowork(nThreads, nTransitions, s);
