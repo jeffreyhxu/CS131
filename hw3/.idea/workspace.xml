@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="add5011a-090e-4766-b314-dc208f33b743" name="Default" comment="BetterSafe3: locks!">
+    <list default="true" id="add5011a-090e-4766-b314-dc208f33b743" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GetNSetUnsafeState.java" afterPath="$PROJECT_DIR$/src/GetNSetUnsafeState.java" />
     </list>
@@ -41,8 +41,8 @@
       <file leaf-file-name="GetNSetUnsafeState.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GetNSetUnsafeState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="39" column="34" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+            <state relative-caret-position="462">
+              <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -360,7 +360,7 @@
       <option name="presentableId" value="Default" />
       <updated>1509092701584</updated>
       <workItem from="1509092712867" duration="8615000" />
-      <workItem from="1509226780308" duration="5997000" />
+      <workItem from="1509226780308" duration="6186000" />
     </task>
     <task id="LOCAL-00001" summary="Coding appears done. Needs to be tested on lnxsrv.&#10;BetterSafe is not very good, improve it.&#10;Create 2-page report.">
       <created>1509141910027</created>
@@ -397,11 +397,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509235489767</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Made GetNSetUnsafe much less safe.">
+      <created>1509237191851</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1509237191851</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14612000" />
+    <option name="totallyTimeSpent" value="14801000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="329" y="40" width="1400" height="1000" extended-state="0" />
@@ -459,7 +466,8 @@
     <MESSAGE value="worsened unsynchronized and getnsetunsafe" />
     <MESSAGE value="prints removed" />
     <MESSAGE value="BetterSafe3: locks!" />
-    <option name="LAST_COMMIT_MESSAGE" value="BetterSafe3: locks!" />
+    <MESSAGE value="Made GetNSetUnsafe much less safe." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made GetNSetUnsafe much less safe." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -610,8 +618,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GetNSetUnsafeState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="39" column="34" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        <state relative-caret-position="462">
+          <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
           <folding />
         </state>
       </provider>
