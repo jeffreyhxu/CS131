@@ -37,6 +37,9 @@ class GetNSetUnsafeState implements State {
         if (ival <= 0 || jval >= maxval) {
             return false;
         }
+        for(int k = 0; k < 1000; k++){
+            System.out.print("");
+        }
         value.set(i, ival - 1);
         value.set(j, jval + 1);
         return true;
