@@ -3,6 +3,7 @@ import java.util.concurrent.atomic.AtomicIntegerArray;
 class GetNSetUnsafeState implements State {
     private AtomicIntegerArray value;
     private byte maxval;
+    private boolean delay = false;
 
     GetNSetUnsafeState(byte[] v) {
         int[] arr = new int[v.length];
@@ -33,16 +34,16 @@ class GetNSetUnsafeState implements State {
     }
 
     public synchronized boolean swap(int i, int j) {
+        delay ^= true;
         int ival = value.get(i), jval = value.get(j);
         if (ival <= 0 || jval >= maxval) {
             return false;
         }
-        for(int k = 0; k < 100 * Math.random(); k++){
-            System.out.print("");
-        }
         value.set(i, ival - 1);
-        for(int k = 0; k < 100 * Math.random(); k++){
-            System.out.print("");
+        if(delay){
+            for(int k = 0; k < 100; k++){
+                System.out.print("");
+            }
         }
         value.set(j, jval + 1);
         return true;
