@@ -87,6 +87,7 @@ is_letter(b).
 is_letter(c).
 is_letter(d).
 is_letter(e).
+is_letter('e''').
 is_letter(f).
 is_letter(g).
 is_letter(h).
@@ -108,6 +109,29 @@ is_letter(w).
 is_letter(x).
 is_letter(y).
 is_letter(z).
+
+% Can punctuation be part of words? I asked on Piazza three times and got no
+% answer. If not, this section should be removed.
+is_letter(.).
+is_letter(',').
+is_letter(:).
+is_letter(?).
+is_letter('''').
+is_letter(-).
+is_letter(/).
+is_letter('(').
+is_letter(')').
+is_letter('"').
+is_letter(=).
+is_letter(+).
+is_letter(@).
+
+% Can prosigns be part of words? I asked on Piazza three times and got no
+% answer. If not, this section should be removed.
+is_letter(as).
+is_letter(ct).
+is_letter(sk).
+is_letter(sn).
 
 take_seq([], [], []).
 take_seq([^|T], [], T).
