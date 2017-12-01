@@ -34,10 +34,10 @@ class PlacesProtocol(asyncio.Protocol):
     def connection_made(self, transport):
         self.transport = transport
         self.peername = transport.get_extra_info('peername')
-        print('Connection from {}'.format(peername))
-        if(peername[0] == '127.0.0.1' and peername[1] in port_of.values()):
+        print('Connection from {}'.format(self.peername))
+        if(self.peername[0] == '127.0.0.1' and self.peername[1] in port_of.values()):
             for other in port_of:
-                if(port_of[other] == peername[1]):
+                if(port_of[other] == self.peername[1]):
                     self.peername = other
         self.log.write(f'Connection from {self.peername}\n')
 
@@ -187,10 +187,10 @@ class MessageProtocol(asyncio.Protocol):
 
     def connection_made(self, transport):
         self.peername = transport.get_extra_info('peername')
-        print('Connection from {}'.format(peername))
-        if(peername[0] == '127.0.0.1' and peername[1] in port_of.values()):
+        print('Connection from {}'.format(self.peername))
+        if(self.peername[0] == '127.0.0.1' and self.peername[1] in port_of.values()):
             for other in port_of:
-                if(port_of[other] == peername[1]):
+                if(port_of[other] == self.peername[1]):
                     self.peername = other
         print(f'Connection for {self.message}')
         self.log.write(f'Connected to {self.peername}')
