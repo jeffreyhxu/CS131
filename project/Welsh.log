@@ -1,0 +1,28 @@
+Connection from ('127.0.0.1', 51192)
+Input from ('127.0.0.1', 51192):
+AT Alford +0.001096725 kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034 Alford
+Closing connection from ('127.0.0.1', 51192)
+Connecting to Ball
+Connected to Ball
+Output to Ball:
+AT Welsh +0.001096725 kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034 Alford
+
+Connection to Ball closed
+Connection from ('127.0.0.1', 51204)
+Input from ('127.0.0.1', 51204):
+AT Ball +0.001096725 kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034 Alford
+Closing connection from ('127.0.0.1', 51204)
+Connection from ('127.0.0.1', 51214)
+Input from ('127.0.0.1', 51214):
+AT Alford -0.735945702 kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034 Alford
+Closing connection from ('127.0.0.1', 51214)
+Connecting to Ball
+Connected to Ball
+Output to Ball:
+AT Welsh -0.735945702 kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034 Alford
+
+Connection to Ball closed
+Connection from ('127.0.0.1', 51228)
+Input from ('127.0.0.1', 51228):
+AT Ball -0.735945702 kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034 Alford
+Closing connection from ('127.0.0.1', 51228)

@@ -1,0 +1,28 @@
+Connection from ('127.0.0.1', 38700)
+Input from ('127.0.0.1', 38700):
+AT Alford +0.001096725 kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034 Alford
+Closing connection from ('127.0.0.1', 38700)
+Connecting to Holiday
+Connected to Holiday
+Output to Holiday:
+AT Hamilton +0.001096725 kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034 Alford
+
+Connection to Holiday closed
+Connection from ('127.0.0.1', 38714)
+Input from ('127.0.0.1', 38714):
+AT Holiday +0.001096725 kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034 Alford
+Closing connection from ('127.0.0.1', 38714)
+Connection from ('127.0.0.1', 38722)
+Input from ('127.0.0.1', 38722):
+AT Alford -0.735945702 kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034 Alford
+Closing connection from ('127.0.0.1', 38722)
+Connecting to Holiday
+Connected to Holiday
+Output to Holiday:
+AT Hamilton -0.735945702 kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034 Alford
+
+Connection to Holiday closed
+Connection from ('127.0.0.1', 38738)
+Input from ('127.0.0.1', 38738):
+AT Holiday -0.735945702 kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034 Alford
+Closing connection from ('127.0.0.1', 38738)

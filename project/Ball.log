@@ -1,0 +1,40 @@
+Connection from ('127.0.0.1', 53332)
+Input from ('127.0.0.1', 53332):
+AT Welsh +0.001096725 kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034 Alford
+Closing connection from ('127.0.0.1', 53332)
+Connecting to Holiday
+Connection from ('127.0.0.1', 53334)
+Connected to Holiday
+Output to Holiday:
+AT Ball +0.001096725 kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034 Alford
+
+Input from ('127.0.0.1', 53334):
+AT Holiday +0.001096725 kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034 Alford
+Closing connection from ('127.0.0.1', 53334)
+Connecting to Welsh
+Connection to Holiday closed
+Connected to Welsh
+Output to Welsh:
+AT Ball +0.001096725 kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034 Alford
+
+Connection to Welsh closed
+Connection from ('127.0.0.1', 53354)
+Input from ('127.0.0.1', 53354):
+AT Welsh -0.735945702 kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034 Alford
+Closing connection from ('127.0.0.1', 53354)
+Connecting to Holiday
+Connection from ('127.0.0.1', 53356)
+Connected to Holiday
+Output to Holiday:
+AT Ball -0.735945702 kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034 Alford
+
+Input from ('127.0.0.1', 53356):
+AT Holiday -0.735945702 kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034 Alford
+Closing connection from ('127.0.0.1', 53356)
+Connecting to Welsh
+Connection to Holiday closed
+Connected to Welsh
+Output to Welsh:
+AT Ball -0.735945702 kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034 Alford
+
+Connection to Welsh closed

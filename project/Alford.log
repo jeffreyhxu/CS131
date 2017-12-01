@@ -1,0 +1,337 @@
+Connection from ('127.0.0.1', 39856)
+Input from ('127.0.0.1', 39856):
+IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034
+Output to ('127.0.0.1', 39856):
+AT Alford +0.001096725 kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034
+Closing connection from ('127.0.0.1', 39856)
+Connecting to Hamilton
+Connecting to Welsh
+Connected to Hamilton
+Output to Hamilton:
+AT Alford +0.001096725 kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034 Alford
+
+Connection from ('127.0.0.1', 39860)
+Connected to Welsh
+Output to Welsh:
+AT Alford +0.001096725 kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034 Alford
+
+Input from ('127.0.0.1', 39860):
+WHATSAT kiwi.cs.ucla.edu 10 5
+Connecting to Google
+Connection to Hamilton closed
+Connection to Welsh closed
+Connected to Google
+Output to Google:
+GET /maps/api/place/nearbysearch/json?key=AIzaSyAhrRJv0snlGB90Pytq8OCrVSgL3ozVNN4&location=34.068930,-118.445127&radius=10 HTTP/1.1
+Host: maps.googleapis.com
+Content-Type: text/plain; charset=utf-8
+
+
+Input from Google:
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+Date: Fri, 01 Dec 2017 07:32:03 GMT
+Expires: Fri, 01 Dec 2017 07:37:03 GMT
+Cache-Control: public, max-age=300
+Server: pablo
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+Accept-Ranges: none
+Vary: Accept-Language,Accept-Encoding
+Transfer-Encoding: chunked
+
+10d0
+{
+   "html_attributions" : [],
+   "results" : [
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.068864,
+               "lng" : -118.4450156
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 34.07021298029149,
+                  "lng" : -118.4436666197085
+               },
+               "southwest" : {
+                  "lat" : 34.0675150197085,
+                  "lng" : -118.4463645802915
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+         "id" : "ef162ea4f60a0b3933fae75544dba377b996befa",
+         "name" : "Westwood Plaza",
+         "place_id" : "ChIJ6Re7qYi8woAR22jVhVAye2M",
+         "reference" : "CmRbAAAAQKBnWcJsIPG5COPv7rpaJMfg4cr18NZVdue09ak7hGTlFeJTQYfTC7N-VEx9EQJ1fdUM0jR8iUvKozBpZ_lhKG_hWiiFJfyhpNFY8-EGx7T88SjLyPQ7T7RZ9NFgMzpeEhDUgE6Dbh86BsWWZ2zaQIedGhSJqE41DG55cH-vLhcRYFagqcKo5Q",
+         "scope" : "GOOGLE",
+         "types" : [ "route" ],
+         "vicinity" : "Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.068921,
+               "lng" : -118.4451811
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 34.08632165,
+                  "lng" : -118.4298687
+               },
+               "southwest" : {
+                  "lat" : 34.05637465,
+                  "lng" : -118.4632287
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "4d56f16ad3d8976d49143fa4fdfffbc0a7ce8e39",
+         "name" : "University of California, Los Angeles",
+         "photos" : [
+            {
+               "height" : 2432,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/104814070553445544652/photos\"\u003eThomas Chee\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAxDfjcsCyDJ4Fmq_qu3YUda890eofZXp4AwpZLcsPXjL-xzu14KhkUWA6L6KeIpMJCOKS8n6fI3xWOPjuaN94cjwGgPCn1pkvZ3znSKK_ygPzXhQ6sOqsDAT51uQJka11EhCuQGRbOYOitOLrbbnEf-qCGhRQxmyTHZRDCDBFHN5ANfLycRKqMA",
+               "width" : 3648
+            }
+         ],
+         "place_id" : "ChIJZQ9c8IW8woARN0gTXFiTqSU",
+         "rating" : 4.5,
+         "reference" : "CmRRAAAAuVYP1lXScZNq8h-zx-7xOS7mSnvmSEz8wBxdxcxf1oVazzR_m69wNQ3JELiVCB4VyCZWViQb_w8McSKhzF4StN8hZMJisryNvT1O657M15f_aH5VuVbN97RD54ni_cfdEhBmEPuBIA4pXnmCRdmiffyxGhTldx4xHxrd7ppCZrlOCBfGp_lJoA",
+         "scope" : "GOOGLE",
+         "types" : [ "university", "point_of_interest", "establishment" ],
+         "vicinity" : "Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.0522342,
+               "lng" : -118.2436849
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 34.3373061,
+                  "lng" : -118.1552891
+               },
+               "southwest" : {
+                  "lat" : 33.7036519,
+                  "lng" : -118.6681759
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+         "id" : "7f7b7d8118ae8db8ed3f541159ac928c484d12ad",
+         "name" : "Los Angeles",
+         "photos" : [
+            {
+               "height" : 3000,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/117190772923098778352/photos\"\u003eBodo\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAV7BMVY8Lqvbq5RlFlkNJaFTyM2dgPGsKltQlfg95KUpbpEwiyxEWyzungvYhezgx9FSiogQfoy8n1uaxjiUxhs75KpZbxaPdLiyzZnuKHQhPf15BYlnGpoOhya6cFMgGEhDya7-EoFMhWVx6R_yh_toVGhRladmW_l6fardOAmvfA4AnfTsoyQ",
+               "width" : 4000
+            }
+         ],
+         "place_id" : "ChIJE9on3F3HwoAR9AhGJW_fL-I",
+         "reference" : "CmRbAAAAlvUKGkNIXK324-OYN541GVt4OBf42gQqSlepQ9_0RFgvh46v145k--TUzBgav_Sh4JYqXvNE2UBo-AJUD8VU-FPhjLZR0Gcjw4Sna7EwacLpDZTACE8ltFo7biOj0UWjEhDU3cXi0awKepKV1elUCRzbGhSTrGaUtt2rX8FiCK-fPtpcpDLD9Q",
+         "scope" : "GOOGLE",
+         "types" : [ "locality", "political" ],
+         "vicinity" : "Los Angeles"
+      }
+   ],
+   "status" : "OK"
+}
+
+0
+
+
+Closing connection to Google
+Output to ('127.0.0.1', 39860):
+AT Alford +0.001096725 kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034
+{
+   "html_attributions": [],
+   "results": [
+      {
+         "geometry": {
+            "location": {
+               "lat": 34.068864,
+               "lng": -118.4450156
+            },
+            "viewport": {
+               "northeast": {
+                  "lat": 34.07021298029149,
+                  "lng": -118.4436666197085
+               },
+               "southwest": {
+                  "lat": 34.0675150197085,
+                  "lng": -118.4463645802915
+               }
+            }
+         },
+         "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+         "id": "ef162ea4f60a0b3933fae75544dba377b996befa",
+         "name": "Westwood Plaza",
+         "place_id": "ChIJ6Re7qYi8woAR22jVhVAye2M",
+         "reference": "CmRbAAAAQKBnWcJsIPG5COPv7rpaJMfg4cr18NZVdue09ak7hGTlFeJTQYfTC7N-VEx9EQJ1fdUM0jR8iUvKozBpZ_lhKG_hWiiFJfyhpNFY8-EGx7T88SjLyPQ7T7RZ9NFgMzpeEhDUgE6Dbh86BsWWZ2zaQIedGhSJqE41DG55cH-vLhcRYFagqcKo5Q",
+         "scope": "GOOGLE",
+         "types": [
+            "route"
+         ],
+         "vicinity": "Los Angeles"
+      },
+      {
+         "geometry": {
+            "location": {
+               "lat": 34.068921,
+               "lng": -118.4451811
+            },
+            "viewport": {
+               "northeast": {
+                  "lat": 34.08632165,
+                  "lng": -118.4298687
+               },
+               "southwest": {
+                  "lat": 34.05637465,
+                  "lng": -118.4632287
+               }
+            }
+         },
+         "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id": "4d56f16ad3d8976d49143fa4fdfffbc0a7ce8e39",
+         "name": "University of California, Los Angeles",
+         "photos": [
+            {
+               "height": 2432,
+               "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/104814070553445544652/photos\">Thomas Chee</a>"
+               ],
+               "photo_reference": "CmRaAAAAxDfjcsCyDJ4Fmq_qu3YUda890eofZXp4AwpZLcsPXjL-xzu14KhkUWA6L6KeIpMJCOKS8n6fI3xWOPjuaN94cjwGgPCn1pkvZ3znSKK_ygPzXhQ6sOqsDAT51uQJka11EhCuQGRbOYOitOLrbbnEf-qCGhRQxmyTHZRDCDBFHN5ANfLycRKqMA",
+               "width": 3648
+            }
+         ],
+         "place_id": "ChIJZQ9c8IW8woARN0gTXFiTqSU",
+         "rating": 4.5,
+         "reference": "CmRRAAAAuVYP1lXScZNq8h-zx-7xOS7mSnvmSEz8wBxdxcxf1oVazzR_m69wNQ3JELiVCB4VyCZWViQb_w8McSKhzF4StN8hZMJisryNvT1O657M15f_aH5VuVbN97RD54ni_cfdEhBmEPuBIA4pXnmCRdmiffyxGhTldx4xHxrd7ppCZrlOCBfGp_lJoA",
+         "scope": "GOOGLE",
+         "types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+         ],
+         "vicinity": "Los Angeles"
+      },
+      {
+         "geometry": {
+            "location": {
+               "lat": 34.0522342,
+               "lng": -118.2436849
+            },
+            "viewport": {
+               "northeast": {
+                  "lat": 34.3373061,
+                  "lng": -118.1552891
+               },
+               "southwest": {
+                  "lat": 33.7036519,
+                  "lng": -118.6681759
+               }
+            }
+         },
+         "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+         "id": "7f7b7d8118ae8db8ed3f541159ac928c484d12ad",
+         "name": "Los Angeles",
+         "photos": [
+            {
+               "height": 3000,
+               "html_attributions": [
+                  "<a href=\"https://maps.google.com/maps/contrib/117190772923098778352/photos\">Bodo</a>"
+               ],
+               "photo_reference": "CmRaAAAAV7BMVY8Lqvbq5RlFlkNJaFTyM2dgPGsKltQlfg95KUpbpEwiyxEWyzungvYhezgx9FSiogQfoy8n1uaxjiUxhs75KpZbxaPdLiyzZnuKHQhPf15BYlnGpoOhya6cFMgGEhDya7-EoFMhWVx6R_yh_toVGhRladmW_l6fardOAmvfA4AnfTsoyQ",
+               "width": 4000
+            }
+         ],
+         "place_id": "ChIJE9on3F3HwoAR9AhGJW_fL-I",
+         "reference": "CmRbAAAAlvUKGkNIXK324-OYN541GVt4OBf42gQqSlepQ9_0RFgvh46v145k--TUzBgav_Sh4JYqXvNE2UBo-AJUD8VU-FPhjLZR0Gcjw4Sna7EwacLpDZTACE8ltFo7biOj0UWjEhDU3cXi0awKepKV1elUCRzbGhSTrGaUtt2rX8FiCK-fPtpcpDLD9Q",
+         "scope": "GOOGLE",
+         "types": [
+            "locality",
+            "political"
+         ],
+         "vicinity": "Los Angeles"
+      }
+   ],
+   "status": "OK"
+}
+
+
+Closing connection from ('127.0.0.1', 39860)
+Connection from ('127.0.0.1', 39878)
+Input from ('127.0.0.1', 39878):
+IAMAT kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034
+Output to ('127.0.0.1', 39878):
+AT Alford -0.735945702 kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034
+Closing connection from ('127.0.0.1', 39878)
+Connecting to Hamilton
+Connecting to Welsh
+Connection from ('127.0.0.1', 39882)
+Connected to Hamilton
+Output to Hamilton:
+AT Alford -0.735945702 kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034 Alford
+
+Connected to Welsh
+Output to Welsh:
+AT Alford -0.735945702 kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034 Alford
+
+Input from ('127.0.0.1', 39882):
+WHATSAT kiwi.cs.ucla.edu 10 5
+Connecting to Google
+Connection to Hamilton closed
+Connection to Welsh closed
+Connected to Google
+Output to Google:
+GET /maps/api/place/nearbysearch/json?key=AIzaSyAhrRJv0snlGB90Pytq8OCrVSgL3ozVNN4&location=50.068930,-118.445127&radius=10 HTTP/1.1
+Host: maps.googleapis.com
+Content-Type: text/plain; charset=utf-8
+
+
+Input from Google:
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+Date: Fri, 01 Dec 2017 07:32:03 GMT
+Expires: Fri, 01 Dec 2017 07:37:03 GMT
+Cache-Control: public, max-age=300
+Server: pablo
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Alt-Svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+Accept-Ranges: none
+Vary: Accept-Language,Accept-Encoding
+Transfer-Encoding: chunked
+
+51
+{
+   "html_attributions" : [],
+   "results" : [],
+   "status" : "ZERO_RESULTS"
+}
+
+0
+
+
+Closing connection to Google
+Output to ('127.0.0.1', 39882):
+AT Alford -0.735945702 kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034
+{
+   "html_attributions": [],
+   "results": [],
+   "status": "ZERO_RESULTS"
+}
+
+
+Closing connection from ('127.0.0.1', 39882)

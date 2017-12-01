@@ -1,0 +1,40 @@
+Connection from ('127.0.0.1', 57636)
+Input from ('127.0.0.1', 57636):
+AT Hamilton +0.001096725 kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034 Alford
+Closing connection from ('127.0.0.1', 57636)
+Connecting to Ball
+Connected to Ball
+Output to Ball:
+AT Holiday +0.001096725 kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034 Alford
+
+Connection from ('127.0.0.1', 57642)
+Input from ('127.0.0.1', 57642):
+AT Ball +0.001096725 kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034 Alford
+Closing connection from ('127.0.0.1', 57642)
+Connecting to Hamilton
+Connection to Ball closed
+Connected to Hamilton
+Output to Hamilton:
+AT Holiday +0.001096725 kiwi.cs.ucla.edu +34.068930-118.445127 1512113523.5943034 Alford
+
+Connection to Hamilton closed
+Connection from ('127.0.0.1', 57658)
+Input from ('127.0.0.1', 57658):
+AT Hamilton -0.735945702 kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034 Alford
+Closing connection from ('127.0.0.1', 57658)
+Connecting to Ball
+Connected to Ball
+Output to Ball:
+AT Holiday -0.735945702 kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034 Alford
+
+Connection from ('127.0.0.1', 57664)
+Input from ('127.0.0.1', 57664):
+AT Ball -0.735945702 kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034 Alford
+Closing connection from ('127.0.0.1', 57664)
+Connecting to Hamilton
+Connection to Ball closed
+Connected to Hamilton
+Output to Hamilton:
+AT Holiday -0.735945702 kiwi.cs.ucla.edu +50.068930-118.445127 1512113524.5943034 Alford
+
+Connection to Hamilton closed
