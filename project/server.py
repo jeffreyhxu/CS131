@@ -109,7 +109,7 @@ class PlacesProtocol(asyncio.Protocol):
                 place_of[self.who] = message[4]
                 time_skew[self.who] = float(message[2])
                 time_of[self.who] = message[5]
-            at_message = f'AT {server_name} {message[2]} {message[3]} {message[4]} {message[5]} {message[6]}'
+            at_message = f'AT {server_name} {message[2]} {message[3]} {message[4]} {message[5]} {message[6]}\n'
             for other in connections:
                 if(other != message[1] and other != message[6]):
                     # since the only cycle visits every server, we only need to ensure
