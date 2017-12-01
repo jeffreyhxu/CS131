@@ -193,12 +193,12 @@ class MessageProtocol(asyncio.Protocol):
                 if(port_of[other] == self.peername[1]):
                     self.peername = other
         print(f'Connection for {self.message}')
-        self.log.write(f'Connected to {self.peername}')
+        self.log.write(f'Connected to {self.peername}\n')
         transport.write(self.message.encode())
         self.log.write(f'Output to {self.peername}:\n{self.message}\n')
 
     def connection_lost(self, exc):
-        self.log.write(f'Connection to {self.peername} closed')
+        self.log.write(f'Connection to {self.peername} closed\n')
             
 class GoogleProtocol(asyncio.Protocol):
     def __init__(self, message, loop, mainprotocol, log):
@@ -210,9 +210,9 @@ class GoogleProtocol(asyncio.Protocol):
         
     def connection_made(self, transport):
         self.transport = transport
-        self.log.write(f'Connected to Google')
+        self.log.write(f'Connected to Google\n')
         transport.write(self.message.encode())
-        self.log.write(f'Output to Google:\n{self.message}')
+        self.log.write(f'Output to Google:\n{self.message}\n')
 
     def data_received(self, data):
         self.buf = self.buf + data.decode()
