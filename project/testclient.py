@@ -27,7 +27,7 @@ loop.run_until_complete(coro)
 loop.run_forever()
 message = 'WHATSAT kiwi.cs.ucla.edu 10 5\n'
 coro = loop.create_connection(lambda: EchoClientProtocol(message, loop),
-                              '127.0.0.1', 9002)
+                              '127.0.0.1', 9001)
 loop.run_until_complete(coro)
 loop.run_forever()
 message = f'IAMAT kiwi.cs.ucla.edu +50.068930-118.445127 {when+1}\n'
@@ -37,7 +37,7 @@ loop.run_until_complete(coro)
 loop.run_forever()
 message = 'WHATSAT kiwi.cs.ucla.edu 10 5\n'
 coro = loop.create_connection(lambda: EchoClientProtocol(message, loop),
-                              '127.0.0.1', 9002)
+                              '127.0.0.1', 9001)
 loop.run_until_complete(coro)
 loop.run_forever()
 loop.close()
