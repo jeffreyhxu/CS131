@@ -32,6 +32,7 @@ class PlacesProtocol(asyncio.Protocol):
         self.log = log
         
     def connection_made(self, transport):
+        self.transport = transport
         self.peername = transport.get_extra_info('peername')
         print('Connection from {}'.format(peername))
         if(peername[0] == '127.0.0.1' and peername[1] in port_of.values()):
@@ -39,7 +40,6 @@ class PlacesProtocol(asyncio.Protocol):
                 if(port_of[other] == peername[1]):
                     self.peername = other
         self.log.write(f'Connection from {self.peername}\n')
-        self.transport = transport
 
     def data_received(self, data):
         self.buf = self.buf + data.decode()
