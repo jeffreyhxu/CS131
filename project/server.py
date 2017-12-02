@@ -34,7 +34,7 @@ class PlacesProtocol(asyncio.Protocol):
     def connection_made(self, transport):
         self.transport = transport
         self.peername = transport.get_extra_info('peername')
-        print('Connection from {}'.format(self.peername))
+        #print('Connection from {}'.format(self.peername))
         if(self.peername[0] == '127.0.0.1' and self.peername[1] in port_of.values()):
             for other in port_of:
                 if(port_of[other] == self.peername[1]):
@@ -43,7 +43,7 @@ class PlacesProtocol(asyncio.Protocol):
 
     def data_received(self, data):
         self.buf = self.buf + data.decode()
-        print(self.buf)
+        #print(self.buf)
         if('\n' in self.buf):
             message = self.buf[:self.buf.index('\n')]
             self.respond(message)
@@ -66,7 +66,7 @@ class PlacesProtocol(asyncio.Protocol):
         return True
 
     def respond(self, buf):
-        print(f'responding to {buf}')
+        #print(f'responding to {buf}')
         self.log.write(f'Input from {self.peername}:\n{buf.strip()}\n')
         when = time.time()
         message = buf.split()
@@ -81,7 +81,7 @@ class PlacesProtocol(asyncio.Protocol):
             except ValueError:
                 self.respond_to_invalid(buf)
                 return
-            print('IAMAT processing')
+            #print('IAMAT processing')
             self.who = message[1]
             if(self.who not in time_of or float(message[3]) > float(time_of[self.who])):
                 place_of[self.who] = message[2]
@@ -98,7 +98,7 @@ class PlacesProtocol(asyncio.Protocol):
                                                                               + f' {server_name}\n',
                                                                               self.log),
                                                       '127.0.0.1', port_of[other])
-                print('Scheduled a friend')
+                #print('Scheduled a friend')
                 self.log.write(f'Connecting to {other}\n')
                 self.loop.create_task(factory)
         elif(message[0] == 'AT'):
@@ -137,7 +137,7 @@ class PlacesProtocol(asyncio.Protocol):
             if(self.who not in place_of):
                 self.respond_to_invalid(buf)
                 return
-            print('WHATSAT processing')
+            #print('WHATSAT processing')
             location = place_of[self.who]
             glocation = location.replace('+', ',').replace('-', ',-').lstrip(',')
             radius = message[2]
@@ -155,7 +155,7 @@ class PlacesProtocol(asyncio.Protocol):
             self.respond_to_invalid(buf)
 
     def respond_to_invalid(self, buf):
-        print('Bad command')
+        #print('Bad command')
         self.transport.write(f'? {buf}'.encode())
         self.log.write(f'Output to {self.peername}:\n? {buf}\n')
         self.transport.close()
@@ -181,18 +181,18 @@ class PlacesProtocol(asyncio.Protocol):
 
 class MessageProtocol(asyncio.Protocol):
     def __init__(self, message, log):
-        print(f'MP made for {message}')
+        #print(f'MP made for {message}')
         self.message = message
         self.log = log
 
     def connection_made(self, transport):
         self.peername = transport.get_extra_info('peername')
-        print('Connection from {}'.format(self.peername))
+        #print('Connection from {}'.format(self.peername))
         if(self.peername[0] == '127.0.0.1' and self.peername[1] in port_of.values()):
             for other in port_of:
                 if(port_of[other] == self.peername[1]):
                     self.peername = other
-        print(f'Connection for {self.message}')
+        #print(f'Connection for {self.message}')
         self.log.write(f'Connected to {self.peername}\n')
         transport.write(self.message.encode())
         self.log.write(f'Output to {self.peername}:\n{self.message}\n')
